@@ -2,126 +2,202 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>iPhone 16 – Design</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            padding-top: 90px;
-            margin: 0;
-            background-color: #f9f9f9;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPhone 16 – Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 90px;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
 
-        h1 {
-            color: #2c2c2c;
-            font-size: 2rem;
-            font-weight: 600;
-        }
-        .btn-primary {
-            background-color: #858687;
-            border-color: #cac8c8;
-        }
-        .btn-primary:hover {
-            background-color: #6c6c6e;
-            border-color: #a8a6a6;
-        }
-    </style>
+    h1 {
+      color: #ffffff;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background-color: #858687;
+      border-color: #cac8c8;
+    }
+
+    .btn-primary:hover {
+      background-color: #6c6c6e;
+      border-color: #a8a6a6;
+    }
+
+        .hero-section {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-section video {
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      border-radius: 15px;
+    }
+
+    .feature-card {
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery img {
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .specs-table {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
-        <div class="container-fluid">
-            <div class="row w-100 align-items-center">
-                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="Images/logo.png" alt="Logo" width="30" height="34">
-                    </a>
-                </div>
-
-
-                <div class="col-6 col-sm-8 col-md-9 col-lg-10 text-end">
-                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="design.html">Design</a></li>
-                            <li class="nav-item"><a class="nav-link" href="camera.html">Camera</a></li>
-                            <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
+    <div class="container-fluid">
+      <div class="row w-100 align-items-center">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <a class="navbar-brand" href="index.html">
+            <img src="Images/logo.png" alt="Logo" width="30" height="34">
+          </a>
         </div>
-    </nav>
 
-    <div class="container my-5">
-  <div class="row g-4 text-center">
 
-    <!-- Card 1 -->
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card h-100">
-        <img src="Images/1.webp" class="card-img-top" alt="Camera Photos">
-        <div class="card-body">
-          <h5 class="card-title">Camera Photos</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Explore</a>
+        <div class="col-6 col-sm-8 col-md-9 col-lg-10 text-end">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="design.html">Design</a></li>
+              <li class="nav-item"><a class="nav-link" href="camera.html">Camera</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+  </nav>
 
-    <!-- Card 2 -->
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card h-100">
-        <img src="Images/2.webp" class="card-img-top" alt="Camera Photos">
-        <div class="card-body">
-          <h5 class="card-title">Camera Photos</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Explore</a>
+
+  <div class="container my-5 hero-section">
+    <video autoplay muted loop>
+      <source src="videos/cameravid.mp4" type="video/mp4">
+    </video>
+      <div class="hero-text">
+      <h1 class="fw-bold fc-white">Capture Life in Every Detail</h1>
+      <p class="lead">Discover the advanced camera system that makes every shot cinematic.</p>
+    </div>
+  </div>
+
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Camera Features</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-card h-100">
+          <h5>Main Camera</h5>
+          <p>48MP Fusion Camera with 2x Telephoto for sharp, detailed shots.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card h-100">
+          <h5>Ultra-Wide Lens</h5>
+          <p>Autofocus lens for macro photography and expansive landscapes.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card h-100">
+          <h5>Night Mode</h5>
+          <p>Bright, clear photos even in low-light environments with AI enhancement.</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Card 3 -->
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card h-100">
-        <img src="Images/3.webp" class="card-img-top" alt="Camera Photos">
-        <div class="card-body">
-          <h5 class="card-title">Camera Photos</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Explore</a>
-        </div>
+  <div class="container my-5 text-center">
+    <h2 class="mb-4">Sample Shots</h2>
+    <div class="row g-4 gallery">
+      <div class="col-md-4">
+        <img src="Images/take1.jpg" alt="Sample 1" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="Images/take2.jpg" alt="Sample 2" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="Images/take3.jpg" alt="Sample 3" class="img-fluid">
       </div>
     </div>
+  </div>
 
-    <!-- Card 4 -->
-    <div class="col-12 col-sm-6 col-md-4">
-      <div class="card h-100">
-        <img src="Images/1.webp" class="card-img-top" alt="Camera Photos">
-        <div class="card-body">
-          <h5 class="card-title">Camera Photos</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          <a href="#" class="btn btn-primary">Explore</a>
-        </div>
-      </div>
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Camera Specifications</h2>
+    <div class="table-responsive specs-table p-4">
+      <table class="table table-borderless mb-0">
+        <tbody>
+          <tr><th>Main Lens</th><td>48MP Fusion Camera</td></tr>
+          <tr><th>Ultra-Wide</th><td>12MP Autofocus Lens</td></tr>
+          <tr><th>Telephoto</th><td>2x Optical Zoom</td></tr>
+          <tr><th>Front Camera</th><td>12MP TrueDepth</td></tr>
+          <tr><th>Video</th><td>4K at 60fps with Cinematic Mode</td></tr>
+          <tr><th>Stabilization</th><td>Sensor-shift OIS</td></tr>
+          <tr><th>AI Processing</th><td>Powered by A18 Chip with Photonic Engine</td></tr>
+        </tbody>
+      </table>
     </div>
+  </div>
 
-    <body>
+  <div class="container text-center my-5">
+    <h3 class="fw-semibold">Ready to Capture Your World?</h3>
+    <p>Experience the iPhone 16 Camera today and make every moment unforgettable.</p>
+    <a href="index.html" class="btn btn-dark px-4 py-2 rounded-pill shadow-sm">Explore More</a>
+  </div>
+      <body>
 
         <div class="row w-100 align-items-center">
-            <footer class="bg-dark text-center py-3 mt-5">
-                <div class="row w-100 align-items-center">
-                    <h6 class="text-light mb-0">© 2024 James Patrick Inc.</h6>
-                </div>
-            </footer>
+          <footer class="bg-dark text-center py-3 mt-5">
+            <div class="row w-100 align-items-center">
+              <h6 class="text-light mb-0">© 2025 James Patrick Orlanes.</h6>
+            </div>
+          </footer>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+      </body>
 
 </html>
